@@ -21,3 +21,12 @@ html
 {
   font-size: 25px;
 }
+body
+{
+	color: royalblue;
+	color: rgb(13, 68, 233);
+	color: #1140cccc;
+	color: rgba(39,177,182,0.8);
+	color: #2775b6CC;
+background-color: #1140cccc;
+}
