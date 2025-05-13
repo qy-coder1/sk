@@ -4,15 +4,18 @@
   height: 50px;
  
 }
+
 .background
 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative;
+  /* top: 0px; 
+  left: 0px;  */
   bottom: auto;
   background-color: black;
   height: 36px;
   width: 100%;
+  margin: 0;
+  display: block;
 }
 .logo
 {
@@ -20,15 +23,14 @@
   top: 8px;
   right: 10px;
   width: 75px;
-  height: 150px;
+
 }
  .whiteground
 {
-  position: absolute;
-  top: 36px;
-  left: 0px;
+  padding-top: 0px;
+  position: relative;
   background-color: red;
-  height: 64px;
+  height: 64px; 
   width: 100%;
 } 
 header
@@ -37,4 +39,36 @@ header
   background-color: white;
   padding: 0 1.25rem;
   width: 100%;
+  height: 64px;
+}
+.yu
+{
+  padding: 0px;
+  margin: 0px;
+}
+body
+{
+  padding: 0px;
+  margin: 0px;
+}
+svg 
+{
+  width: 50px;
+  height: 64px;
+}
+botton
+{
+  background-color: #0070d1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 40px; /* 设置按钮高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding-left: 5px;
+display:inline-block;
 }
