@@ -90,6 +90,7 @@ display:inline-block; */
 .botton
 {
   color: black;
+  font-weight: 400;
 }
 .botton:hover
 {
@@ -98,7 +99,21 @@ display:inline-block; */
 .separator {
   color: black;
   align-items: center;
+  transition: transform 0.15s ease;
 }
+.separator:hover:hover
+{
+  color:blue
+}
+
+
+a{
+  display: inline-block;
+}
+.separator:focus  {
+  transform: rotate(180deg);
+}
+
 .separator02
 {
   color: white;
@@ -137,11 +152,12 @@ display:inline-block; */
   width: 25px;
   color: black;
 }
-.fix
-{
-  display: flex;
-}
 
+.fix-picture
+{
+  height: 250px;
+  width: 100%;
+}
 .picture  {
   /* position: absolute;
   left: 0;
@@ -152,15 +168,99 @@ display:inline-block; */
   display: block;
   max-width: 100%; 
   margin: 0 ; 
-
+ z-index: -1;
 }
+.fixed-div
+{
+  position:absolute;
+  top:120px;
+  left: 70px;
+  z-index: 1; /* 设置一个较高的 z-index 值 */
+  width: 350px;
+}
+
+.text
+{
+  color: white; 
+  position: relative;
+  top: -620px;
+  left: 0px;
+  font-weight: 300;
+  height: 590px;
+  width: 650px;
+  background-color: black;
+  /* opacity: 0.5; */
+  z-index: 0; /* 设置一个较低的 z-index 值 */
+  background: linear-gradient(to right, rgb(118, 113, 113), rgba(128, 128, 128, 0));
+}
+.fixef
+{
+  position: fixed;
+  top: 100px;
+  left: 80px;
+}
+ .fil
+{
+  position: relative;
+  top: 255px;
+  left: 70px;
+  font-size: 18px;
+}
+.fix-botton
+{
+  color: black;
+  position: relative;
+  top: 250px;
+  left: 70px;
+  width: 100px;
+  height: 35px;
+  background-color: white;
+  border-radius: 25px;
+  transition:background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.fix-botton p
+{
+  color: black;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  font-weight: 400;
+}
+.fix-botton:hover
+{
+ background-color: black;
+ border: 2px solid black;
+}
+.fill
+{
+  position: relative;
+  top: 240px;
+  left: 70px;
+  /* margin-top: 10px;  */
+  font-size: 18px;
+}
+h1
+{
+  position: relative;
+  top: 250px;
+  left: 80px;
+ font-size: 45px;
+ font-weight: 400;
+} 
 .pt
 {
   position: relative;
-  top: 0px;
+  margin-top: 170px;
+  margin-left: -100px;
+  justify-self: center;
+}
+.pt-span
+{
+  position: relative;
+  top: 100px;
   left: 0px;
-  height: 50px;
-
 }
 .pt-one
 {
@@ -249,13 +349,20 @@ a:hover {
   
 
 } */
+.pt:hover
+{
+  opacity: 0.8;
+}
+
 .pt-one:hover
 {
-  opacity: 1;
+  opacity: 1 ;
   background-color: rgb(0, 90, 170); /* 悬停时背景色变深 */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* 悬停时阴影加深 */
   transform: translateY(-10px); /* 悬停时轻微上浮 */
   transition:  0.2s ease; /* 过渡动画 */
+  
+ 
 }
 .pt-two:hover
 {
@@ -305,13 +412,31 @@ a:hover {
   transform: translateY(-10px); /* 悬停时轻微上浮 */
   transition:  0.2s ease; /* 过渡动画 */
 }
-
-
-.pt:hover
+.pt-one:focus
 {
-  opacity: 0.8;
+  
+  border: 3px solid black;
+
+ 
 }
 a
 {
   text-decoration: none; /* 完全去除下划线 */
+}
+
+.under
+{
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  top:500px;
+  left: 0px;
+}
+
+
+.transparent
+{
+  position: relative;
+  height: 100px;
+  opacity: 0;
 }
